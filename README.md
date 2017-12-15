@@ -1,7 +1,7 @@
 # sql-extra
 
 ## Introduction
-JAP 或则 JDBC 都是将sql语句直接写在代码中，这样与代码的耦合性较强，不直观。 
+JPA 或则 JDBC 都是将sql语句直接写在代码中，这样与代码的耦合性较强，不直观。 
 `sql-extra`项目类似于mybatis，可以将代码与sql分离，并且使用更加简单。
 
 ## Example

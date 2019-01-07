@@ -26,6 +26,7 @@ class AppConfig {
 		FreemarkerSqlTemplates templates = new FreemarkerSqlTemplates();
 		templates.setTemplateLocation("classpath:/sqls");
 		templates.setSuffix(".sftl");
+		templates.setTemplateBasePackage("/sqls/**");
 		return templates;
 	}
 

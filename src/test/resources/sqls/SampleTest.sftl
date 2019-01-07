@@ -1,5 +1,6 @@
 -- findByContent
   SELECT * FROM t_sample WHERE 1 = 1
+  <#-- 测试 -->
   <#if content??>
         AND content LIKE '%${content}%'
   </#if>

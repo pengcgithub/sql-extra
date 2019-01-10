@@ -10,8 +10,8 @@ JPA 或则 JDBC 都是将sql语句直接写在代码中，这样与代码的耦�
 
 ```config
 <bean id="freemarkerSqlTemplates" class="com.sql.extra.FreemarkerSqlTemplates">
-    <property name="templateLocation" value="classpath:/sqls" />
     <property name="suffix" value=".sftl" />
+    <property name="templateBasePackage" value="/sqls/**" />
 </bean>
 
 <bean id="applicationContextHelper" class="com.sql.extra.ApplicationContextHelper" lazy-init="false"></bean>
@@ -41,6 +41,9 @@ System.out.println(sql);
 
 ```
 
+## TODO
+
+- 防止sql注入
 
 ## References
 - [spring-data-jpa-extra](https://github.com/slyak/spring-data-jpa-extra)

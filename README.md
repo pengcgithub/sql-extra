@@ -41,10 +41,6 @@ System.out.println(sql);
 
 ```
 
-## TODO
-
-- 防止sql注入
-
 ## References
 - [spring-data-jpa-extra](https://github.com/slyak/spring-data-jpa-extra)
 
